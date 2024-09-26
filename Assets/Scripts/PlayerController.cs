@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
-    [SerializeField] float Velocidad;
+    [SerializeField] float fuerza;
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
         float movX = Input.GetAxis("Horizontal");
         float movY = Input.GetAxis("Vertical");
 
-        Vector3 movimiento=new Vector3 (movX, -1, movY);
+        Vector3 movimiento = new Vector3(movX, 0, movY);
 
-        rb.velocity = movimiento * Velocidad;
+        rb.AddForce(movimiento * fuerza);
     }
 }
