@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
     [SerializeField] float fuerza;
+    Vector3 movimiento;
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
@@ -17,6 +18,9 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movimiento = new Vector3(movX, 0, movY);
 
-        rb.AddForce(movimiento * fuerza);
+    }
+    private void FixedUpdate()
+    {
+        rb.AddForce(movimiento * fuerza); 
     }
 }
