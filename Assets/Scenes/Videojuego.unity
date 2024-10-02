@@ -609,6 +609,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cecebdd5d31825d45bd4b012d8f04e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direccionRot: {x: 0, y: 30, z: 0}
+  direccionTrans: {x: 0, y: 1, z: 0}
+  velocidadRot: 3
+  velocidadTrans: 0.5
 --- !u!65 &1316212128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -906,6 +910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direccion: {x: 1, y: 0, z: 0}
+  velocidad: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
