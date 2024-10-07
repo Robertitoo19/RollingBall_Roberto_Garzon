@@ -7,7 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
     [SerializeField] float fuerza;
-
+    [SerializeField] float fuerzaSalto;
+    Vector3 movimiento;
+    Vector3 salto;
     [SerializeField] TMP_Text txtPnts;
     private int puntos;
     void Start()
@@ -17,16 +19,24 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        float movX = Input.GetAxis("Horizontal");
+        float movZ = Input.GetAxis("Vertical");
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            salto = new Vector3(0, 1, 0);
+            rb.AddForce(salto * fuerzaSalto, ForceMode.Impulse);
+        }
+
+        
+        movimiento = new Vector3(movX, 0, movZ);
+
+
         txtPnts.text = "x " + puntos.ToString(" 0");
     }
     private void FixedUpdate()
     {
-        float movX = Input.GetAxis("Horizontal");
-        float movY = Input.GetAxis("Vertical");
-
-        Vector3 movimiento = new Vector3(movX, 0, movY);
-
-        rb.AddForce(movimiento * fuerza); 
+        rb.AddForce(movimiento * fuerza);
     }
     void OnTriggerEnter(Collider collision)
     {
