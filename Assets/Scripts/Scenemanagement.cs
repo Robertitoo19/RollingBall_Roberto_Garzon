@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class Scenemanagement : MonoBehaviour
 {
-    void Start()
+    public void Play()
     {
-        
+        SceneManager.LoadScene("Videojuego");
     }
-    void Update()
+    public void Exit()
     {
-        
+        Application.Quit();
+        Debug.Log("Chao");
     }
 }

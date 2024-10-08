@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float fuerzaSalto;
     Vector3 movimiento;
     Vector3 salto;
+
     [SerializeField] TMP_Text txtPnts;
     private int puntos;
     void Start()

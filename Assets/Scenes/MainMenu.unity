@@ -472,7 +472,7 @@ RectTransform:
   m_GameObject: {fileID: 933576914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6223568, y: 1.4222177, z: 1.1608993}
+  m_LocalScale: {x: 1.6223568, y: 1.5400498, z: 1.1608993}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1316831436}
@@ -554,10 +554,10 @@ RectTransform:
   - {fileID: 1677025350}
   m_Father: {fileID: 1316831436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 159, y: 28}
+  m_AnchorMin: {x: 0.34, y: 0.42879775}
+  m_AnchorMax: {x: 0.6694792, y: 0.56549436}
+  m_AnchoredPosition: {x: 2, y: 2.5}
+  m_SizeDelta: {x: -481, y: -95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1202325493
 MonoBehaviour:
@@ -602,7 +602,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1202325494}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1568958919}
+        m_TargetAssemblyTypeName: Scenemanagement, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1202325494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,10 +687,10 @@ RectTransform:
   - {fileID: 321520573}
   m_Father: {fileID: 1316831436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 16, y: 0}
-  m_SizeDelta: {x: 512, y: 512}
+  m_AnchorMin: {x: 0.020000001, y: 0.021292144}
+  m_AnchorMax: {x: 0.11152084, y: 0.22010113}
+  m_AnchoredPosition: {x: -1.5999756, y: 3.7000122}
+  m_SizeDelta: {x: 333, y: 332}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1277470545
 MonoBehaviour:
@@ -723,7 +735,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1277470546}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1568958919}
+        m_TargetAssemblyTypeName: Scenemanagement, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1277470546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,7 +927,7 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
---- !u!1 &1340706957
+--- !u!1 &1568958918
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -911,59 +935,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1340706959}
-  - component: {fileID: 1340706958}
+  - component: {fileID: 1568958920}
+  - component: {fileID: 1568958919}
   m_Layer: 0
-  m_Name: Video Player
+  m_Name: Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!328 &1340706958
-VideoPlayer:
+--- !u!114 &1568958919
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340706957}
+  m_GameObject: {fileID: 1568958918}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: bc52b12b459545348a2414d11b426f67, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 1925973261}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 1
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_TimeUpdateMode: 2
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
-  m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 1
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
---- !u!4 &1340706959
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 974373d4364202047a3369de613395e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1568958920
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340706957}
+  m_GameObject: {fileID: 1568958918}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 550.5, y: 257, z: 0}
+  m_LocalPosition: {x: 5.452533, y: 0.8150857, z: -0.07820831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1251,4 +1253,4 @@ SceneRoots:
   - {fileID: 402987317}
   - {fileID: 1316831436}
   - {fileID: 295468141}
-  - {fileID: 1340706959}
+  - {fileID: 1568958920}
