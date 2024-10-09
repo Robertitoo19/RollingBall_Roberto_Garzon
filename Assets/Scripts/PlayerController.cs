@@ -13,10 +13,15 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] TMP_Text txtPnts;
     private int puntos;
+    private int Vidas = 3;
+
+    Vector3 posiInicial;
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
         puntos = 0;
+        Vidas = 3;
+        posiInicial = transform.position;
     }
     void Update()
     {
@@ -28,10 +33,8 @@ public class PlayerController : MonoBehaviour
             salto = new Vector3(0, 1, 0);
             rb.AddForce(salto * fuerzaSalto, ForceMode.Impulse);
         }
-
-        
+ 
         movimiento = new Vector3(movX, 0, movZ);
-
 
         txtPnts.text = "x " + puntos.ToString(" 0");
     }
@@ -39,12 +42,27 @@ public class PlayerController : MonoBehaviour
     {
         rb.AddForce(movimiento * fuerza);
     }
-    void OnTriggerEnter(Collider collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Item")
+        if (other.gameObject.CompareTag("Item"))
         {
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
             puntos++;
+        }
+        if (other.gameObject.CompareTag("Trampa"))
+        {
+            Vidas--;
+            Debug.Log(Vidas);
+
+            if(Vidas == 0)
+            {
+                transform.position = posiInicial;
+                Vidas = 3;
+            }
+        }
+        if (other.gameObject.CompareTag("Vacio"))
+        {
+            transform.position = posiInicial;
         }
     }
 }
