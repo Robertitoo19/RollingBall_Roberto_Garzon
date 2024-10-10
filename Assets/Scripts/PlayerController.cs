@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>(); 
         puntos = 0;
+        txtPnts.text = ("x " + puntos);
         Vidas = 3;
         posiInicial = transform.position;
     }
@@ -34,9 +35,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(salto * fuerzaSalto, ForceMode.Impulse);
         }
  
-        movimiento = new Vector3(movX, 0, movZ);
-
-        txtPnts.text = "x " + puntos.ToString(" 0");
+        movimiento = new Vector3(movX, 0, movZ); 
     }
     private void FixedUpdate()
     {
@@ -48,6 +47,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
             puntos++;
+            txtPnts.text = "x " + puntos;
         }
         if (other.gameObject.CompareTag("Trampa"))
         {
