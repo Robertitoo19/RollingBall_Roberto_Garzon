@@ -59,7 +59,10 @@ public class PlayerController : MonoBehaviour
                 transform.position = posiInicial;
                 Vidas = 3;
             }
-        }
+        }    
+    }
+    private void OnTriggerExit(Collider other)
+    {
         if (other.gameObject.CompareTag("Vacio"))
         {
             transform.position = posiInicial;
