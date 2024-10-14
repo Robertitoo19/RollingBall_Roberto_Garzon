@@ -16,6 +16,7 @@ public class CambioCamara : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        
+        CamApagar.SetActive(true);
+        CamEncender.SetActive(false);
     }
 }
