@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private int Vidas = 3;
 
     Vector3 posiInicial;
+
+    [SerializeField] private float radioRay;
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
@@ -29,7 +31,7 @@ public class PlayerController : MonoBehaviour
         float movX = Input.GetAxis("Horizontal");
         float movZ = Input.GetAxis("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
         {
             salto = new Vector3(0, 1, 0);
             rb.AddForce(salto * fuerzaSalto, ForceMode.Impulse);
@@ -67,5 +69,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = posiInicial;
         }
+    }
+    private bool isGrounded()
+    {
+        bool resultado = Physics.Raycast(transform.position, Vector3.down, radioRay);
+        Debug.DrawLine(transform.position, Vector3.down, Color.red, 2f);
+        return resultado;
     }
 }

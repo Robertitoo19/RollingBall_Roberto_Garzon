@@ -4,22 +4,45 @@ using UnityEngine;
 
 public class RotarRaquetas : MonoBehaviour
 {
-    [SerializeField] Vector3 direccionRot;
-    [SerializeField] int velocidadRot;
+
+    private Rigidbody rb;
     float timer = 0f;
+    [SerializeField] private float velocidadRotacion;
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
+        StartCoroutine(RotarAObjetivo());
     }
-    void Update()
+    private IEnumerator RotarAObjetivo()
     {
-        transform.Rotate(direccionRot * velocidadRot * Time.deltaTime, Space.World);
-        timer = timer + Time.deltaTime;
-
-        if (timer >= 1f)
+        while(true)
         {
-            direccionRot = -direccionRot;
-            timer = 0f;
+            float tiempoRotacion = 1f;
+            while(timer < tiempoRotacion)
+            {
+                Quaternion deltaRotation = Quaternion.Euler(new Vector3(-1, 0, 0) * velocidadRotacion * Time.fixedDeltaTime);
+                rb.MoveRotation(rb.rotation * deltaRotation);
+                timer += Time.deltaTime;
+                yield return new WaitForFixedUpdate();
+            }
+            timer = 0;
+
+            yield return new WaitForSeconds(1f);
+
+            while (timer < tiempoRotacion)
+            {
+                Quaternion deltaRotation = Quaternion.Euler(new Vector3(1, 0, 0) * velocidadRotacion * Time.fixedDeltaTime);
+                rb.MoveRotation(rb.rotation * deltaRotation);
+                timer += Time.deltaTime;
+                yield return new WaitForFixedUpdate();
+            }
+            yield return new WaitForSeconds(1f);
+
+            timer = 0;
+
+            yield return new WaitForFixedUpdate();
+
+
         }
     }
 }
