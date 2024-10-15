@@ -16,7 +16,7 @@ public class Trasladar : MonoBehaviour
         transform.Translate(Time.deltaTime * velocidad * direccion);
         timer = timer + Time.deltaTime;
 
-        if(timer >= 5f)
+        if(timer >= 4.5f)
         {
             direccion = -direccion;
             timer = 0f;

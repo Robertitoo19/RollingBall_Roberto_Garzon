@@ -6,9 +6,21 @@ using UnityEngine.UI;
 
 public class Scenemanagement : MonoBehaviour
 {
+    public void Nombre()
+    {
+        SceneManager.LoadScene("IntroducirNombre");
+    }
+    public void Menu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     public void Play()
     {
         SceneManager.LoadScene("Videojuego");
+    }
+    public void Puntuacion()
+    {
+        SceneManager.LoadScene("Puntuacion");
     }
     public void Exit()
     {
