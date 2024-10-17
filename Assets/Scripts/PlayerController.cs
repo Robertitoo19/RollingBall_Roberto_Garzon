@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     Vector3 posiInicial;
 
     [SerializeField] private float radioRay;
+
+    private float tiempo;
+    [SerializeField] TMP_Text cronometro;
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
@@ -25,6 +28,7 @@ public class PlayerController : MonoBehaviour
         txtPnts.text = ("x " + puntos);
         Vidas = 3;
         posiInicial = transform.position;
+        tiempo = 0;
     }
     void Update()
     {
@@ -37,7 +41,10 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(salto * fuerzaSalto, ForceMode.Impulse);
         }
  
-        movimiento = new Vector3(movX, 0, movZ); 
+        movimiento = new Vector3(movX, 0, movZ);
+
+        tiempo = tiempo + Time.deltaTime;
+        cronometro.text = tiempo.ToString("00:00");
     }
     private void FixedUpdate()
     {
