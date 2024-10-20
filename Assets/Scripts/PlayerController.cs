@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>(); 
         puntos = 0;
         txtPnts.text = ("x " + puntos);
-        Vidas = 3;
         posiInicial = transform.position;
         tiempo = 0;
     }
@@ -58,23 +57,26 @@ public class PlayerController : MonoBehaviour
             puntos++;
             txtPnts.text = "x " + puntos;
         }
-        if (other.gameObject.CompareTag("Trampa"))
-        {
-            Vidas--;
-            Debug.Log(Vidas);
-
-            if(Vidas == 0)
-            {
-                transform.position = posiInicial;
-                Vidas = 3;
-            }
-        }    
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Vacio"))
         {
             transform.position = posiInicial;
+        }
+    }
+    private void OnCollisionEnter(Collision choque)
+    {
+        if (choque.gameObject.CompareTag("Trampa"))
+        {
+            Vidas--;
+            Debug.Log(Vidas);
+
+            if (Vidas == 0)
+            {
+                transform.position = posiInicial;
+                Vidas = 3;
+            }
         }
     }
     private bool isGrounded()
