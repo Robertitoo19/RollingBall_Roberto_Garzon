@@ -19,7 +19,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float radioRay;
 
-    private float tiempo;
+    private float contador;
+    private float segundos;
+    private int minutos;
     [SerializeField] TMP_Text cronometro;
     void Start()
     {
@@ -27,7 +29,6 @@ public class PlayerController : MonoBehaviour
         puntos = 0;
         txtPnts.text = ("x " + puntos);
         posiInicial = transform.position;
-        tiempo = 0;
     }
     void Update()
     {
@@ -42,8 +43,14 @@ public class PlayerController : MonoBehaviour
  
         movimiento = new Vector3(movX, 0, movZ);
 
-        tiempo = tiempo + Time.deltaTime;
-        cronometro.text = tiempo.ToString("00:00");
+        contador = contador + Time.deltaTime;
+        segundos = contador;
+        if (segundos >= 60)
+        {
+            segundos = 0;
+            minutos++;
+        }
+        cronometro.text = minutos.ToString("00") + ":" + segundos.ToString("00");
     }
     private void FixedUpdate()
     {
