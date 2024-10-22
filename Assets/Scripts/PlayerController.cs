@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
     Vector3 salto;
 
     [SerializeField] TMP_Text txtPnts;
-    private int puntos;
+    private int puntos = 0;
+    [SerializeField] TMP_Text txtVidas;
     private int Vidas = 3;
 
     Vector3 posiInicial;
@@ -23,12 +24,19 @@ public class PlayerController : MonoBehaviour
     private float segundos;
     private int minutos;
     [SerializeField] TMP_Text cronometro;
+
+    [SerializeField] AudioClip[] sonidos;
+    private new AudioSource audio;
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
-        puntos = 0;
         txtPnts.text = ("x " + puntos);
+        txtVidas.text = ("x " + Vidas);
         posiInicial = transform.position;
+        audio = GetComponent<AudioSource>();
+
+        audio.clip = sonidos[0];
+        audio.Play();
     }
     void Update()
     {
@@ -77,12 +85,12 @@ public class PlayerController : MonoBehaviour
         if (choque.gameObject.CompareTag("Trampa"))
         {
             Vidas--;
-            Debug.Log(Vidas);
-
+            txtVidas.text = "x " + Vidas;
             if (Vidas == 0)
             {
                 transform.position = posiInicial;
                 Vidas = 3;
+                txtVidas.text = "x " + Vidas;
             }
         }
     }
