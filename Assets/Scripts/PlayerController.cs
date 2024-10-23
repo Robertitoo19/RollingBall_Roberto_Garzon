@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float radioRay;
 
-    private float contador;
+    //private float contador;
     private float segundos;
     private int minutos;
     [SerializeField] TMP_Text cronometro;
@@ -52,16 +52,15 @@ public class PlayerController : MonoBehaviour
  
         movimiento = new Vector3(movX, 0, movZ);
 
-        contador = contador + Time.deltaTime;
-        segundos = contador;
+        //contador = contador + Time.deltaTime;
+        segundos += Time.deltaTime;
         if (segundos >= 60)
         {
             segundos = 0;
             minutos++;
         }
-        cronometro.text = minutos.ToString("00") + ":" + segundos.ToString("00");
+        cronometro.text = minutos.ToString("00") + ":" + Mathf.Floor(segundos).ToString("00");
 
-        PlayerPrefs.SetFloat("Puntuacion", contador);
     }
     private void FixedUpdate()
     {
@@ -77,6 +76,13 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Win"))
         {
+            //Calculo marca
+            float marca = minutos * 60 + segundos;
+
+            //Redondear marca a dos decimales.
+            marca = (float)System.Math.Round(marca, 2);
+
+            PlayerPrefs.SetFloat("Puntuacion", marca); 
             SceneManager.LoadScene(3);
         }
     }

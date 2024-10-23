@@ -14,6 +14,6 @@ public class MostrarNombre : MonoBehaviour
     void Update()
     {
         nombre.text = PlayerPrefs.GetString("nombrePlayer");
-        //tiempo.text = PlayerPrefs.GetFloat("Puntuacion");
+        tiempo.text = PlayerPrefs.GetFloat("Puntuacion").ToString();
     }
 }
