@@ -6,6 +6,7 @@ using UnityEngine;
 public class MostrarNombre : MonoBehaviour
 {
     [SerializeField] TMP_Text nombre;
+    [SerializeField] TMP_Text tiempo;
     void Start()
     {
         
@@ -13,5 +14,6 @@ public class MostrarNombre : MonoBehaviour
     void Update()
     {
         nombre.text = PlayerPrefs.GetString("nombrePlayer");
+        //tiempo.text = PlayerPrefs.GetFloat("Puntuacion");
     }
 }

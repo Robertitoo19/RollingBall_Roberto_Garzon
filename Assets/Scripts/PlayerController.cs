@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -59,6 +60,8 @@ public class PlayerController : MonoBehaviour
             minutos++;
         }
         cronometro.text = minutos.ToString("00") + ":" + segundos.ToString("00");
+
+        PlayerPrefs.SetFloat("Puntuacion", contador);
     }
     private void FixedUpdate()
     {
@@ -71,6 +74,10 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             puntos++;
             txtPnts.text = "x " + puntos;
+        }
+        if (other.gameObject.CompareTag("Win"))
+        {
+            SceneManager.LoadScene(3);
         }
     }
     private void OnTriggerExit(Collider other)
