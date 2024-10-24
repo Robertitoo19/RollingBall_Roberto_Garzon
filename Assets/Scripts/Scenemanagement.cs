@@ -22,6 +22,10 @@ public class Scenemanagement : MonoBehaviour
     {
         SceneManager.LoadScene("Puntuacion");
     }
+    public void Settings()
+    {
+        SceneManager.LoadScene("Slider");
+    }
     public void Exit()
     {
         Application.Quit();

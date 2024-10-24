@@ -25,19 +25,12 @@ public class PlayerController : MonoBehaviour
     private float segundos;
     private int minutos;
     [SerializeField] TMP_Text cronometro;
-
-    [SerializeField] AudioClip[] sonidos;
-    private new AudioSource audio;
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
         txtPnts.text = ("x " + puntos);
         txtVidas.text = ("x " + Vidas);
         posiInicial = transform.position;
-        audio = GetComponent<AudioSource>();
-
-        audio.clip = sonidos[0];
-        audio.Play();
     }
     void Update()
     {
@@ -74,16 +67,11 @@ public class PlayerController : MonoBehaviour
             puntos++;
             txtPnts.text = "x " + puntos;
         }
-        if (other.gameObject.CompareTag("Win"))
+        if (other.gameObject.CompareTag("Win") && puntos >= 7)
         {
-            //Calculo marca
-            float marca = minutos * 60 + segundos;
-
-            //Redondear marca a dos decimales.
-            marca = (float)System.Math.Round(marca, 2);
-
-            PlayerPrefs.SetFloat("Puntuacion", marca); 
-            SceneManager.LoadScene(3);
+            PlayerPrefs.SetInt("PuntuacionM", minutos); 
+            PlayerPrefs.SetFloat("PuntuacionS", Mathf.Floor(segundos)); 
+            SceneManager.LoadScene(4);
         }
     }
     private void OnTriggerExit(Collider other)
