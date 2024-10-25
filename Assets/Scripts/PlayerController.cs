@@ -21,16 +21,18 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float radioRay;
 
-    //private float contador;
     private float segundos;
     private int minutos;
     [SerializeField] TMP_Text cronometro;
+
+    AudioManager audioManager;
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
         txtPnts.text = ("x " + puntos);
         txtVidas.text = ("x " + Vidas);
         posiInicial = transform.position;
+        audioManager = GetComponent<AudioManager>();
     }
     void Update()
     {
@@ -45,7 +47,6 @@ public class PlayerController : MonoBehaviour
  
         movimiento = new Vector3(movX, 0, movZ);
 
-        //contador = contador + Time.deltaTime;
         segundos += Time.deltaTime;
         if (segundos >= 60)
         {
@@ -64,6 +65,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Item"))
         {
             Destroy(other.gameObject);
+            
             puntos++;
             txtPnts.text = "x " + puntos;
         }
@@ -84,6 +86,17 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter(Collision choque)
     {
         if (choque.gameObject.CompareTag("Trampa"))
+        {
+            Vidas--;
+            txtVidas.text = "x " + Vidas;
+            if (Vidas == 0)
+            {
+                transform.position = posiInicial;
+                Vidas = 3;
+                txtVidas.text = "x " + Vidas;
+            }
+        }
+        if (choque.gameObject.CompareTag("TrampaPincho"))
         {
             Vidas--;
             txtVidas.text = "x " + Vidas;

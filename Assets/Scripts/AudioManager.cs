@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private new AudioSource audio;
+    [SerializeField] AudioSource musicSource;
+    [SerializeField] AudioSource sfxSource;
+
+    public AudioClip backGround;
+    public AudioClip item;
+    public AudioClip trampSaw;
+    public AudioClip trampSpike;
+    public AudioClip wallTouch;
     void Start()
     {
-        
+        musicSource.clip = backGround;
+        musicSource.Play();
     }
     void Update()
     {
         
     }
-    void ReproducirSonido(AudioClip clip)
+    public void ReproducirSFX(AudioClip clip)
     {
-
+        sfxSource.PlayOneShot(clip);
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - Trampa
   - Vacio
   - Win
+  - audio
+  - TrampaPincho
   layers:
   - Default
   - TransparentFX
