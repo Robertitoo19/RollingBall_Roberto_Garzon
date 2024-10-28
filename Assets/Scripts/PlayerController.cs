@@ -24,8 +24,9 @@ public class PlayerController : MonoBehaviour
     private float segundos;
     private int minutos;
     [SerializeField] TMP_Text cronometro;
+    [SerializeField] AudioManager audioManager;
+    public AudioClip wallTouch;
 
-    AudioManager audioManager;
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
@@ -106,7 +107,10 @@ public class PlayerController : MonoBehaviour
                 Vidas = 3;
                 txtVidas.text = "x " + Vidas;
             }
+
         }
+        audioManager.ReproducirSFX(wallTouch);
+
     }
     private bool isGrounded()
     {

@@ -11,7 +11,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip item;
     public AudioClip trampSaw;
     public AudioClip trampSpike;
-    public AudioClip wallTouch;
     void Start()
     {
         musicSource.clip = backGround;

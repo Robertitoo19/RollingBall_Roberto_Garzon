@@ -150,8 +150,12 @@ MonoBehaviour:
   fuerza: 9
   fuerzaSalto: 15
   txtPnts: {fileID: 0}
+  txtVidas: {fileID: 0}
   radioRay: 0.55
   cronometro: {fileID: 0}
+  audioManager: {fileID: 7497742779178135866, guid: 80c45dc00866ea5469d179af3149b7d7,
+    type: 3}
+  wallTouch: {fileID: 0}
 --- !u!96 &5497281446698864492
 TrailRenderer:
   serializedVersion: 3

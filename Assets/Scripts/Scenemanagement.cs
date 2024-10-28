@@ -6,9 +6,20 @@ using UnityEngine.UI;
 
 public class Scenemanagement : MonoBehaviour
 {
+    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject sliderMenu;
+    [SerializeField] private GameObject inputMenu;
+    public void Slider()
+    {
+        mainMenu.SetActive(false);
+        sliderMenu.SetActive(true);
+        inputMenu.SetActive(false);
+    }
     public void Nombre()
     {
-        SceneManager.LoadScene("IntroducirNombre");
+        mainMenu.SetActive(false);
+        sliderMenu.SetActive(false);
+        inputMenu.SetActive(true);
     }
     public void Menu()
     {
@@ -17,14 +28,6 @@ public class Scenemanagement : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene("Videojuego");
-    }
-    public void Puntuacion()
-    {
-        SceneManager.LoadScene("Puntuacion");
-    }
-    public void Settings()
-    {
-        SceneManager.LoadScene("Slider");
     }
     public void Exit()
     {

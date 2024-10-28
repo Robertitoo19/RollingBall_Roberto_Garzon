@@ -5,11 +5,12 @@ using UnityEngine;
 public class ParedCubos : MonoBehaviour
 {
     private bool iniciarTimer;
+    private bool stopTimer;
     private float timer = 0;
     [SerializeField] private Rigidbody[] rbs;
     void Update()
     {
-        if (iniciarTimer)
+        if (iniciarTimer && !stopTimer)
         {
             timer = timer + Time.unscaledDeltaTime;
 
@@ -21,6 +22,7 @@ public class ParedCubos : MonoBehaviour
                 {
                     rbs[i].useGravity = true;
                 }
+                stopTimer = true;
             }
         }
     }
@@ -30,6 +32,7 @@ public class ParedCubos : MonoBehaviour
         {
             Time.timeScale = 0.2f;
             iniciarTimer = true;
+            stopTimer = false;
         }
     }
 }

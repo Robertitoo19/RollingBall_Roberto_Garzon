@@ -11,6 +11,7 @@ public class MenuPause : MonoBehaviour
     {
         menuPausa.gameObject.SetActive(false);
         DontDestroyOnLoad(menuPausa.gameObject);
+
     }
     void Update()
     {
@@ -21,7 +22,7 @@ public class MenuPause : MonoBehaviour
     }
     private void Pausar()
     {
-        pause=!pause;
+        pause= !pause;
         menuPausa.gameObject.SetActive(pause);
 
         if (pause == true) 
