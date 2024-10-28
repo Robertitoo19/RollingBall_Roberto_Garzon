@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f8310f918f49b794b866df40d6a574f1
   - enabled: 1
-    path: Assets/Scenes/Slider.unity
-    guid: a558308c624fdca4cb2a05459f5a7ab6
-  - enabled: 1
-    path: Assets/Scenes/IntroducirNombre.unity
-    guid: 5f9e51ada0add6943a18a58da937475c
-  - enabled: 1
     path: Assets/Scenes/Videojuego.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1

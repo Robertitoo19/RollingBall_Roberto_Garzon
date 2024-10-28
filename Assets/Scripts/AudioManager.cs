@@ -13,8 +13,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip trampSpike;
     void Start()
     {
-        musicSource.clip = backGround;
-        musicSource.Play();
+
     }
     void Update()
     {

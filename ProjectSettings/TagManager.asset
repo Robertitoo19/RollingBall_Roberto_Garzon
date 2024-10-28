@@ -10,6 +10,7 @@ TagManager:
   - Win
   - audio
   - TrampaPincho
+  - Suelo
   layers:
   - Default
   - TransparentFX

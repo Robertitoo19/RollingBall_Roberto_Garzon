@@ -7,11 +7,14 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
+
+    [Header("-----Movimiento y Salto-----")]
     [SerializeField] float fuerza;
     [SerializeField] float fuerzaSalto;
     Vector3 movimiento;
     Vector3 salto;
 
+    [Header("-----Puntos y Vidas-----")]
     [SerializeField] TMP_Text txtPnts;
     private int puntos = 0;
     [SerializeField] TMP_Text txtVidas;
@@ -21,11 +24,14 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float radioRay;
 
+    [Header("-----Contador-----")]
     private float segundos;
     private int minutos;
     [SerializeField] TMP_Text cronometro;
+
+    [Header("-----Audio-----")]
     [SerializeField] AudioManager audioManager;
-    public AudioClip wallTouch;
+    public AudioClip[] sonidos;
 
     void Start()
     {
@@ -66,15 +72,15 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Item"))
         {
             Destroy(other.gameObject);
-            
             puntos++;
             txtPnts.text = "x " + puntos;
+            audioManager.ReproducirSFX(sonidos[2]);
         }
         if (other.gameObject.CompareTag("Win") && puntos >= 7)
         {
             PlayerPrefs.SetInt("PuntuacionM", minutos); 
             PlayerPrefs.SetFloat("PuntuacionS", Mathf.Floor(segundos)); 
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(2);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -96,6 +102,7 @@ public class PlayerController : MonoBehaviour
                 Vidas = 3;
                 txtVidas.text = "x " + Vidas;
             }
+            audioManager.ReproducirSFX(sonidos[3]);
         }
         if (choque.gameObject.CompareTag("TrampaPincho"))
         {
@@ -107,9 +114,12 @@ public class PlayerController : MonoBehaviour
                 Vidas = 3;
                 txtVidas.text = "x " + Vidas;
             }
-
+            audioManager.ReproducirSFX(sonidos[4]);
         }
-        audioManager.ReproducirSFX(wallTouch);
+        if (choque.gameObject.CompareTag("Suelo"))
+        {
+            audioManager.ReproducirSFX(sonidos[1]);
+        }
 
     }
     private bool isGrounded()

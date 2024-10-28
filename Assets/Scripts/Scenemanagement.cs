@@ -21,6 +21,12 @@ public class Scenemanagement : MonoBehaviour
         sliderMenu.SetActive(false);
         inputMenu.SetActive(true);
     }
+    public void MenuNoBoton()
+    {
+        mainMenu.SetActive(true);
+        sliderMenu.SetActive(false);
+        inputMenu.SetActive(false);
+    }
     public void Menu()
     {
         SceneManager.LoadScene("MainMenu");
@@ -28,6 +34,7 @@ public class Scenemanagement : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene("Videojuego");
+        Time.timeScale = 1.0f;
     }
     public void Exit()
     {

@@ -10,8 +10,6 @@ public class MenuPause : MonoBehaviour
     void Start()
     {
         menuPausa.gameObject.SetActive(false);
-        DontDestroyOnLoad(menuPausa.gameObject);
-
     }
     void Update()
     {
