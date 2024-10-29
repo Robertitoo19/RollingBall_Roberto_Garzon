@@ -14,11 +14,11 @@ public class PlayerController : MonoBehaviour
     Vector3 movimiento;
     Vector3 salto;
 
-    [Header("-----Puntos y Vidas-----")]
+    [Header("-----Puntos Y Vidas-----")]
     [SerializeField] TMP_Text txtPnts;
     private int puntos = 0;
-    [SerializeField] TMP_Text txtVidas;
     private int Vidas = 3;
+    [SerializeField] GameObject[] corazonesVida;
 
     Vector3 posiInicial;
 
@@ -37,7 +37,6 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>(); 
         txtPnts.text = ("x " + puntos);
-        txtVidas.text = ("x " + Vidas);
         posiInicial = transform.position;
         audioManager = GetComponent<AudioManager>();
     }
@@ -95,25 +94,13 @@ public class PlayerController : MonoBehaviour
         if (choque.gameObject.CompareTag("Trampa"))
         {
             Vidas--;
-            txtVidas.text = "x " + Vidas;
-            if (Vidas == 0)
-            {
-                transform.position = posiInicial;
-                Vidas = 3;
-                txtVidas.text = "x " + Vidas;
-            }
+            SistemaVidas();
             audioManager.ReproducirSFX(sonidos[3]);
         }
         if (choque.gameObject.CompareTag("TrampaPincho"))
         {
             Vidas--;
-            txtVidas.text = "x " + Vidas;
-            if (Vidas == 0)
-            {
-                transform.position = posiInicial;
-                Vidas = 3;
-                txtVidas.text = "x " + Vidas;
-            }
+            SistemaVidas();
             audioManager.ReproducirSFX(sonidos[4]);
         }
         if (choque.gameObject.CompareTag("Suelo"))
@@ -121,6 +108,35 @@ public class PlayerController : MonoBehaviour
             audioManager.ReproducirSFX(sonidos[1]);
         }
 
+    }
+    private void SistemaVidas()
+    {
+        if (Vidas == 3)
+        {
+            corazonesVida[0].SetActive(true);
+            corazonesVida[1].SetActive(true);
+            corazonesVida[2].SetActive(true);
+        }
+         else if (Vidas == 2)
+        {
+            corazonesVida[0].SetActive(true);
+            corazonesVida[1].SetActive(true);
+            corazonesVida[2].SetActive(false);
+        }
+        else if (Vidas == 1)
+        {
+            corazonesVida[0].SetActive(true);
+            corazonesVida[1].SetActive(false);
+            corazonesVida[2].SetActive(false);
+        }
+        else if (Vidas == 0)
+        {
+            transform.position = posiInicial;
+            Vidas = 3;
+            corazonesVida[0].SetActive(true);
+            corazonesVida[1].SetActive(true);
+            corazonesVida[2].SetActive(true);
+        }
     }
     private bool isGrounded()
     {
