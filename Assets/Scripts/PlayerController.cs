@@ -38,7 +38,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>(); 
         txtPnts.text = ("x " + puntos);
         posiInicial = transform.position;
-        audioManager = GetComponent<AudioManager>();
     }
     void Update()
     {
