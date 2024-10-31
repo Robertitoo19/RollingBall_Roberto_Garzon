@@ -438,7 +438,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -667,7 +667,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -1824,7 +1824,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -2114,7 +2114,7 @@ PrefabInstance:
     - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2734,7 +2734,7 @@ GameObject:
   - component: {fileID: 150097824}
   m_Layer: 0
   m_Name: Pared
-  m_TagString: Untagged
+  m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2839,7 +2839,7 @@ GameObject:
   - component: {fileID: 152386489}
   m_Layer: 0
   m_Name: Pared (3)
-  m_TagString: Untagged
+  m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3268,7 +3268,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 2464619953526782346, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -3787,7 +3787,7 @@ GameObject:
   - component: {fileID: 244101661}
   m_Layer: 0
   m_Name: Pared (4)
-  m_TagString: Untagged
+  m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6832,7 +6832,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -7846,7 +7846,7 @@ PrefabInstance:
     - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8007,7 +8007,7 @@ PrefabInstance:
     - target: {fileID: 7310994851991465770, guid: f51fa6708c279854d94fa72360b2a550,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8416,7 +8416,7 @@ PrefabInstance:
     - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8913,7 +8913,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -11046,7 +11046,7 @@ PrefabInstance:
     - target: {fileID: 438377250397809442, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6569937873040182091, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
@@ -11119,7 +11119,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -12330,7 +12330,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -12738,7 +12738,7 @@ PrefabInstance:
     - target: {fileID: 438377250397809442, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 1415329271897350356, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
@@ -13361,7 +13361,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -13824,7 +13824,7 @@ PrefabInstance:
     - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16102,7 +16102,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -16344,7 +16344,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -17694,7 +17694,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -18454,7 +18454,7 @@ PrefabInstance:
     - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19022,7 +19022,7 @@ PrefabInstance:
     - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19113,7 +19113,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -19522,7 +19522,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -21476,7 +21476,7 @@ GameObject:
   - component: {fileID: 1544120738}
   m_Layer: 0
   m_Name: Pared (2)
-  m_TagString: Untagged
+  m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21601,7 +21601,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -21701,7 +21701,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -22148,7 +22148,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -23240,7 +23240,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -23326,7 +23326,7 @@ GameObject:
   - component: {fileID: 1661281681}
   m_Layer: 0
   m_Name: Pared (1)
-  m_TagString: Untagged
+  m_TagString: obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23852,7 +23852,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -24051,7 +24051,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -24813,7 +24813,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -25653,7 +25653,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -27527,7 +27527,7 @@ PrefabInstance:
     - target: {fileID: 438377250397809442, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 1415329271897350356, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
@@ -28476,7 +28476,7 @@ PrefabInstance:
     - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28585,7 +28585,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -29058,7 +29058,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -29945,7 +29945,7 @@ PrefabInstance:
     - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -30093,7 +30093,7 @@ PrefabInstance:
     - target: {fileID: 7310994851991465770, guid: f51fa6708c279854d94fa72360b2a550,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30303,7 +30303,7 @@ PrefabInstance:
     - target: {fileID: 438377250397809442, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 6569937873040182091, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}

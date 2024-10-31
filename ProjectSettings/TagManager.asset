@@ -11,6 +11,7 @@ TagManager:
   - audio
   - TrampaPincho
   - Suelo
+  - obstaculo
   layers:
   - Default
   - TransparentFX

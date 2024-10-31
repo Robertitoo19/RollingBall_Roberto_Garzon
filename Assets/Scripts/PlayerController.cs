@@ -102,7 +102,7 @@ public class PlayerController : MonoBehaviour
             SistemaVidas();
             audioManager.ReproducirSFX(sonidos[4]);
         }
-        if (choque.gameObject.CompareTag("Suelo"))
+        if (choque.gameObject.CompareTag("Suelo") || choque.gameObject.CompareTag("obstaculo"))
         {
             audioManager.ReproducirSFX(sonidos[1]);
         }
