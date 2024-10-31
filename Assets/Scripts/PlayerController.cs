@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -60,6 +62,7 @@ public class PlayerController : MonoBehaviour
         }
         cronometro.text = minutos.ToString("00") + ":" + Mathf.Floor(segundos).ToString("00");
 
+        Cursor.lockState = CursorLockMode.Locked;
     }
     private void FixedUpdate()
     {
