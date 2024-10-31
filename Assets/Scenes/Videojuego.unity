@@ -435,6 +435,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -658,6 +663,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -1811,6 +1821,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2095,6 +2110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tennis_net2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3244,6 +3264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 2464619953526782346, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -6804,6 +6829,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7813,6 +7843,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tennis_net2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7968,6 +8003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rodillo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310994851991465770, guid: f51fa6708c279854d94fa72360b2a550,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8372,6 +8412,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tennis_net2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8864,6 +8909,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -10993,6 +11043,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tennis_bat
       objectReference: {fileID: 0}
+    - target: {fileID: 438377250397809442, guid: 6cbb107fdbd93b64888ce3c020e90376,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6569937873040182091, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11060,6 +11115,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -12267,6 +12327,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -12669,6 +12734,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tennis_bat (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 438377250397809442, guid: 6cbb107fdbd93b64888ce3c020e90376,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 1415329271897350356, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
@@ -13288,6 +13358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -13745,6 +13820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tennis_net2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16019,6 +16099,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -16255,6 +16340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -17601,6 +17691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -18356,6 +18451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tennis_net2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18919,6 +19019,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tennis_net2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19004,6 +19109,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -19408,6 +19518,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -21483,6 +21598,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -21577,6 +21697,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -22019,6 +22144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -23107,6 +23237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -23714,6 +23849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -23907,6 +24047,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -24664,6 +24809,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -25499,6 +25649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -27369,6 +27524,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tennis_bat
       objectReference: {fileID: 0}
+    - target: {fileID: 438377250397809442, guid: 6cbb107fdbd93b64888ce3c020e90376,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 1415329271897350356, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
       propertyPath: velocidadRot
@@ -28313,6 +28473,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tennis_net2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6733161081007523056, guid: 8129c233c41ed744d8cb8b5258371a9d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28416,6 +28581,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -28884,6 +29054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stumps (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
@@ -29767,6 +29942,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stumps
       objectReference: {fileID: 0}
+    - target: {fileID: 319333223723912122, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6560823934617050587, guid: ccbc81e6a3d85ab4e9cbbfa534fda3b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -29909,6 +30089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rodillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310994851991465770, guid: f51fa6708c279854d94fa72360b2a550,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30114,6 +30299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tennis_bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 438377250397809442, guid: 6cbb107fdbd93b64888ce3c020e90376,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     - target: {fileID: 6569937873040182091, guid: 6cbb107fdbd93b64888ce3c020e90376,
         type: 3}
