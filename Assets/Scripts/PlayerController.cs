@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject[] corazonesVida;
 
     Vector3 posiInicial;
+    [SerializeField] GameObject spawnPoint;
+    [SerializeField] GameObject spawnPoint2;
 
     [SerializeField] private float radioRay;
 
@@ -81,6 +84,14 @@ public class PlayerController : MonoBehaviour
             PlayerPrefs.SetInt("PuntuacionM", minutos); 
             PlayerPrefs.SetFloat("PuntuacionS", Mathf.Floor(segundos)); 
             SceneManager.LoadScene(2);
+        }
+        if (other.gameObject.CompareTag("CheckPoint"))
+        {
+            posiInicial = spawnPoint.transform.position;
+        }
+        if (other.gameObject.CompareTag("CheckPoint2"))
+        {
+            posiInicial = spawnPoint2.transform.position;
         }
     }
     private void OnTriggerExit(Collider other)

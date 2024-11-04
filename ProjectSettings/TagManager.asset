@@ -12,6 +12,8 @@ TagManager:
   - TrampaPincho
   - Suelo
   - obstaculo
+  - CheckPoint
+  - CheckPoint2
   layers:
   - Default
   - TransparentFX

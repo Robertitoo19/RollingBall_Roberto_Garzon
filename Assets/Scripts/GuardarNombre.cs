@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GuardarNombre : MonoBehaviour
 {
@@ -13,9 +14,10 @@ public class GuardarNombre : MonoBehaviour
     }
     void Update()
     {
-        if (campoNombre.text != "")
+        if (campoNombre.text != "" && Input.GetKeyDown(KeyCode.L))
         {
             PlayerPrefs.SetString("nombrePlayer",campoNombre.text);
+            SceneManager.LoadScene("Videojuego");
         }
     }
 }
