@@ -14,7 +14,7 @@ public class GuardarNombre : MonoBehaviour
     }
     void Update()
     {
-        if (campoNombre.text != "" && Input.GetKeyDown(KeyCode.L))
+        if (campoNombre.text != "" && Input.GetKeyDown(KeyCode.Return))
         {
             PlayerPrefs.SetString("nombrePlayer",campoNombre.text);
             SceneManager.LoadScene("Videojuego");
